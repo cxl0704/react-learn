@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import HelloWorld from './HelloWorld/hello.js';
 import HelloWorld01 from './HelloWorld01/hello.js';
-import Chat from './Chat/chat.js'
+import Chat from './Chat/chat.js';
+import Clock from './Clock/clock.js'
 import './index.css';
 
 const styles = {
@@ -14,6 +15,7 @@ const routeMap = {
   "HelloWorld": HelloWorld,
   "HelloWorld01": HelloWorld01,
   "Chat": Chat,
+  "Clock": Clock,
 };
 
 class App extends React.PureComponent {
