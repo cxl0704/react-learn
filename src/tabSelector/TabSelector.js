@@ -2,7 +2,7 @@ import React, {PureComponent} from "react";
 import PropTypes from "prop-types";
 import "./TabSelector.css";
 
-export default class TabSelector extends PureComponent {
+export  class TabSelector extends PureComponent {
   static propTypes = {
     value: PropTypes.string,
     options: PropTypes.array,
@@ -16,18 +16,17 @@ export default class TabSelector extends PureComponent {
   };
 
   render() {
+    //const { options, value, onChange } = this.props;
     return (
       <div className="tab-selector">
         <ul>
           {options.map(opt => (
             <li
-              key = {opt.value}
-              className = {`tab-item ${
-                opt.value === this.props.value
-                  ? "selected"
-                  : ""
+              key={opt.value}
+              className={`tab-item ${
+                opt.value === this.props.value ? "selected" : ""
               }`}
-              onClick= {() => this.props.onChange(opt.value)}
+              onClick={() => this.props.onChange(opt.value)}
             >
               {opt.name}
             </li>
@@ -39,12 +38,12 @@ export default class TabSelector extends PureComponent {
 }
 
 const options = [
-  { name: "Red", value: "red" },
-  { name: "Blue", value: "blue" },
-  { name: "Orange", value: "orange" }
+  { name: "Red", value: "Red" },
+  { name: "Blue", value: "Blue" },
+  { name: "Orange", value: "Orange" }
 ];
 
-export class TabSelectorSample extends PureComponent {
+export default class TabSelectorSample extends PureComponent {
   state = {
     color: null
   };
