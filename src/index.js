@@ -5,6 +5,7 @@ import HelloWorld01 from './HelloWorld01/hello.js';
 import Chat from './Chat/chat.js';
 import Clock from './Clock/clock.js';
 import TabSelector from './tabSelector/TabSelector.js'
+import AdvancedTabSelector from './advTabSelector/AdvancedTabSelector.js'
 import './index.css';
 
 const styles = {
@@ -18,6 +19,7 @@ const routeMap = {
   "Chat": Chat,
   "Clock": Clock,
   "TabSelector": TabSelector,
+  "AdvancedTabSelector": AdvancedTabSelector,
 };
 
 class App extends React.PureComponent {
