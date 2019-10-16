@@ -6,6 +6,7 @@ import Chat from './Chat/chat.js';
 import Clock from './Clock/clock.js';
 import TabSelector from './tabSelector/TabSelector.js'
 import AdvancedTabSelector from './advTabSelector/AdvancedTabSelector.js'
+import Snapshot from './snapshot/Snapshot.js'
 import './index.css';
 
 const styles = {
@@ -20,6 +21,7 @@ const routeMap = {
   "Clock": Clock,
   "TabSelector": TabSelector,
   "AdvancedTabSelector": AdvancedTabSelector,
+  "Snapshot": Snapshot,
 };
 
 class App extends React.PureComponent {
