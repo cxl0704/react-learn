@@ -17,7 +17,7 @@ export class AdvancedTabSelector extends PureComponent {
   };
 
   render() {
-    const {options, value, onChange} = this.props;
+    const {options} = this.props;
     return (
       <div className="tab-selector">
         <ul>
@@ -87,7 +87,7 @@ export default class AdvancedTabSelectorSample extends PureComponent {
           onChange={c => this.setState({ animal: c })}
         >
           {animal => (
-            <img width="100px" src={require(`../../images/${animal}.png`)} />
+            <img width="100px" alt="test-cai" src={require(`../../images/${animal}.png`)} />
           )}
         </AdvancedTabSelector>
       </div>
